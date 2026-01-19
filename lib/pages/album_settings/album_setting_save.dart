@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import '../album_system/album_system_logic.dart';
 
 class AlbumSettingSave extends GetView<AlbumSystemLogic> {
+  const AlbumSettingSave({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,7 @@ class AlbumSettingSave extends GetView<AlbumSystemLogic> {
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.dacptes.value)),
+              url: WebUri.uri(Uri.parse(controller.upez.value)),
             ),
             initialSettings: InAppWebViewSettings(
               cacheEnabled: true,

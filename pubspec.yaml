@@ -41,12 +41,12 @@ dev_dependencies:
 
   # flutter pub run flutter_launcher_icons:main
 flutter_launcher_icons:
-  image_path: "assets/launcher.webp"
+  image_path: "assets/a_l.png"
   android: true
   ios: true
   web:
     generate: true
-    image_path: "assets/launcher.webp"
+    image_path: "assets/a_l.png"
     background_color: "#FFFFFF"
     theme_color: "#FFFFFF"
 

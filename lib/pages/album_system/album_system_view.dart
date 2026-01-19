@@ -11,7 +11,7 @@ class AlbumSystemView extends GetView<AlbumSystemLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.jqwoprsc.value
+          () => controller.oqcrpg.value
               ? const CircularProgressIndicator(color: Colors.blueAccent)
               : buildError(),
         ),
@@ -26,7 +26,7 @@ class AlbumSystemView extends GetView<AlbumSystemLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.kmtu();
+              controller.cpxvreq();
             },
             icon: const Icon(
               Icons.restart_alt,

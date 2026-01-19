@@ -1,3 +1,6 @@
+import 'package:album_app/pages/album_settings/album_setting_save.dart';
+import 'package:album_app/pages/album_system/album_system_binding.dart';
+import 'package:album_app/pages/album_system/album_system_view.dart';
 import 'package:album_app/services/tag_suggestion_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -74,7 +77,7 @@ class MyApp extends StatelessWidget {
                 backgroundColor: Colors.black.withAlpha(200),
               )
           ),
-          initialRoute: '/album_tab',
+          initialRoute: '/',
           getPages: Art,
         );
       },
@@ -83,6 +86,14 @@ class MyApp extends StatelessWidget {
 }
 
 List<GetPage<dynamic>> Art = [
+  GetPage(
+    name: '/',
+    page: () => const AlbumSystemView(),
+    binding: AlbumSystemBinding(),
+    transition: Transition.cupertino,
+    popGesture: true,
+    preventDuplicates: false,
+  ),
   GetPage(
     name: '/album_tab',
     page: () => const AlbumTabView(),
@@ -111,6 +122,13 @@ List<GetPage<dynamic>> Art = [
     name: '/album_albums',
     page: () => const AlbumAlbumsView(),
     binding: AlbumAlbumsBinding(),
+    transition: Transition.cupertino,
+    popGesture: true,
+    preventDuplicates: false,
+  ),
+  GetPage(
+    name: '/album_settings_save',
+    page: () => const AlbumSettingSave(),
     transition: Transition.cupertino,
     popGesture: true,
     preventDuplicates: false,
